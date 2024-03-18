@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled1/cubit/cubit.dart';
 import 'package:untitled1/database/DbHelper.dart';
 import 'package:untitled1/screen/HomeScreen.dart';
+import 'package:untitled1/screen/SplashScreen.dart';
 
 void main(){
   runApp(MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       create: (context) => NoteCubit(dbHelper: DbHelper()),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomeScreen(),
+        home: SplashScreen(),
       ),
     );
   }
